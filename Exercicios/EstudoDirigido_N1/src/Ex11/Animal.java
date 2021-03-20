@@ -1,3 +1,7 @@
+/*
+    Feito por Arthur dos Santos e Eduardo Nicolodi
+*/
+
 package Ex11;
 
 import java.util.Scanner;
