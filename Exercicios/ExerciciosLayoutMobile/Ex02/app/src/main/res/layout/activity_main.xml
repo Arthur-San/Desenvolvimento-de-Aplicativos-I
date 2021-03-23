@@ -43,8 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:backgroundTint="#223B71"
         android:radius="10dp"
-        android:endColor="#66ff00"
         android:text="Log in"
         android:textSize="18sp" />
 
