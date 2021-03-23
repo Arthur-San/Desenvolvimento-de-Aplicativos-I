@@ -1,5 +1,5 @@
 /*
-    Feito por Arthur dos Santos e Eduardo Nicolodi
+    Feito por Arthur dos Santos
 */
 
 package Ex11;
