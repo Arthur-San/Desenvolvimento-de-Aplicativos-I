@@ -83,21 +83,21 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="140"
+                android:layout_width="139dp"
                 android:layout_height="wrap_content"
                 android:text="peso"
                 android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="140"
+                android:layout_width="139dp"
                 android:layout_height="wrap_content"
                 android:text="poder"
                 android:textAlignment="center" />
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="140"
+                android:layout_width="139dp"
                 android:layout_height="wrap_content"
                 android:text="tamanho"
                 android:textAlignment="center" />
