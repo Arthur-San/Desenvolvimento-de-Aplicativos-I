@@ -96,6 +96,7 @@
                 android:backgroundTint="#FFFFFF"
                 android:text="Registrar"
                 android:textColor="#000000"
+                app:cornerRadius="20dp"
                 app:strokeWidth="2dp" />
 
             <Button
@@ -106,6 +107,7 @@
                 android:backgroundTint="#E4E4E4"
                 android:text="Entrar"
                 android:textColor="#000000"
+                app:cornerRadius="20dp"
                 app:strokeWidth="2dp" />
         </LinearLayout>
     </LinearLayout>
