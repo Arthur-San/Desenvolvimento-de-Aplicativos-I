@@ -28,6 +28,7 @@ public class ActivityQ1 extends AppCompatActivity {
         btnOpcao2Q1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 abrirQ2();
             }
         });

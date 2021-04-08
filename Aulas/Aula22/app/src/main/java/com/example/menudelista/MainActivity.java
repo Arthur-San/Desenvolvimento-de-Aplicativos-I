@@ -2,6 +2,7 @@ package com.example.menudelista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -41,8 +42,47 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 Toast.makeText(MainActivity.this, itens[i], Toast.LENGTH_SHORT).show();
 
+                if (i == 0){
+                    abrirHTML5();
+                }
+                if (i == 1){
+                    abrirCSS();
+                }
+                if (i == 2){
+                    abrirSASS();
+                }
+                if (i == 3){
+                    abrirJavaScript();
+                }
+
             }
         });
 
     }
+
+    private void abrirHTML5()
+    {
+        Intent janelaHTML = new Intent(this, CursoHTML.class);
+        startActivity(janelaHTML);
+    }
+
+    private void abrirCSS()
+    {
+        Intent janelaCSS = new Intent(this, CursoCSS.class);
+        startActivity(janelaCSS);
+    }
+
+    private void abrirSASS()
+    {
+        Intent janelaCSS = new Intent(this, CursoSASS.class);
+        startActivity(janelaCSS);
+    }
+
+    private void abrirJavaScript()
+    {
+        Intent janelaJs = new Intent(this, CursoJavaScript.class);
+        startActivity(janelaJs);
+    }
+
+
 }
