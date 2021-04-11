@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         dados = findViewById(R.id.dados);
         btnEnviar = findViewById(R.id.btnEnviar);
         imagem = findViewById(R.id.imagem);
-        mp = MediaPlayer.create(this, R.raw.DarkTeaser);
+        mp = MediaPlayer.create(this, R.raw.teaser);
         mp.start();
 
         WebSettings gif = imagem.getSettings();

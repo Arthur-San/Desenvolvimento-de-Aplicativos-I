@@ -21,7 +21,7 @@ public class Teaser extends AppCompatActivity {
         trailer = findViewById(R.id.trailer);
         btnVoltar = findViewById(R.id.btnVoltar);
 
-        Uri caminho = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.DarkTeaser );
+        Uri caminho = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.teaser );
         trailer.setVideoURI(caminho);
         trailer.start();
 
