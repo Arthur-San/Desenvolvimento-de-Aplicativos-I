@@ -1,4 +1,4 @@
-package com.example.sensoresn;
+package com.example.sensores;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,27 +13,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.sensoresn.MainActivity;
-
 public class SensorLuminosidade extends AppCompatActivity {
     private TextView visual;
     SensorManager sm;
     SensorEventListener listener;
     Sensor luz;
     Button btnAce;
-    Button btnVoltarProx;
+    Button btnVoltarP;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sensor_luminosidade);
 
         visual = findViewById(R.id.visual);
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);
         luz = sm.getDefaultSensor(Sensor.TYPE_LIGHT);
         btnAce = findViewById(R.id.btnAce);
-        btnVoltarProx = findViewById(R.id.btnVoltarProx);
+        btnVoltarP = findViewById(R.id.btnVoltarP);
 
         btnAce.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,12 +40,13 @@ public class SensorLuminosidade extends AppCompatActivity {
             }
         });
 
-        btnVoltarProx.setOnClickListener(new View.OnClickListener() {
+        btnVoltarP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                voltar();
+                voltarP();
             }
         });
+
         listener = new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent event)
@@ -63,8 +62,7 @@ public class SensorLuminosidade extends AppCompatActivity {
             }
 
             @Override
-            public void onAccuracyChanged(Sensor sensor, int i)
-            {
+            public void onAccuracyChanged(Sensor sensor, int i) {
 
             }
         };
@@ -78,13 +76,12 @@ public class SensorLuminosidade extends AppCompatActivity {
         startActivity(janela);
     }
 
-    public void voltar(){
+    public void voltarP(){
         Intent janelaV = new Intent(this, MainActivity.class);
         startActivity(janelaV);
     }
     @Override
     protected void onPause() {
-
         sm.unregisterListener(listener,luz);
         super.onPause();
     }
