@@ -7,7 +7,6 @@
     android:background="#F6DCDC"
     tools:context=".SensorLuminosidade">
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -37,31 +36,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/btnAce"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:backgroundTint="#DA7979"
-        android:text="Ace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/visual" />
-
-    <Button
         android:id="@+id/btnVoltarP"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="50dp"
         android:backgroundTint="#DA7979"
         android:text="voltar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAce" />
-
+        app:layout_constraintTop_toBottomOf="@+id/visual" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,14 +49,14 @@ public class SensorProximidade extends AppCompatActivity implements SensorEventL
         super.onPause();
     }
     /*
-     * metodo onSensorChanged que ocorre quando é executado ou modificado algum tipo de evento
-     * relacionado ao sensor especificado
-     * se o valor do evento for = a 0, é pq estamos proximos ao sensor, se nao estamos afastados
-     * */
+    * metodo onSensorChanged que ocorre quando é executado ou modificado algum tipo de evento
+    * relacionado ao sensor especificado
+    * se o valor do evento for = a 0, é pq estamos proximos ao sensor, se nao estamos afastados
+    * */
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if(event.values[0] ==0 ){
+        if(event.values[0] == 0 ){
             getWindow().getDecorView().setBackgroundColor(Color.rgb(234,78,78));
             resultado.setText("Está Próximo");
         }else{
