@@ -27,7 +27,7 @@ public class SensorProximidade extends AppCompatActivity implements SensorEventL
         medir = (SensorManager) this.getSystemService(SENSOR_SERVICE);
         proximidade= medir.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         resultado = findViewById(R.id.resultado);
-        btnVoltar = findViewById(R.id.btnVoltar);
+        btnVoltar = findViewById(R.id.btnVoltarAlarm);
 
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -2,12 +2,15 @@ package com.example.sensores;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +19,7 @@ public class Acelerometro extends AppCompatActivity implements SensorEventListen
     private boolean isColor = false;
     private TextView respostab;
     private long ultimaAtualizacao;
+    Button btnVoltarAcele;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +30,24 @@ public class Acelerometro extends AppCompatActivity implements SensorEventListen
         respostab.setBackgroundColor(Color.rgb(246,220,220));
         sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         ultimaAtualizacao = System.currentTimeMillis();
+        btnVoltarAcele = findViewById(R.id.btnVoltarAcele);
+
+        btnVoltarAcele.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirVoltar();
+            }
+        });
+
     }
+
+
+    private void abrirVoltar(){
+        Intent janelavoltar = new Intent(this, MainActivity.class);
+        startActivity(janelavoltar);
+
+    }
+
 
     @Override
     public void onSensorChanged(SensorEvent event) {
@@ -45,7 +66,7 @@ public class Acelerometro extends AppCompatActivity implements SensorEventListen
         float accelationSquareRoot = (x * x + y * y + z *z)/(SensorManager.GRAVITY_EARTH * SensorManager.GRAVITY_EARTH);
         long tempoAtual = System.currentTimeMillis();
 
-        Toast.makeText(getApplicationContext(), String.valueOf(accelationSquareRoot) + " " + SensorManager.GRAVITY_EARTH, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), String.valueOf(accelationSquareRoot) + " " + SensorManager.GRAVITY_EARTH, Toast.LENGTH_SHORT).show();
 
         if(accelationSquareRoot >=2){
             if(tempoAtual - ultimaAtualizacao < 200){
@@ -53,9 +74,9 @@ public class Acelerometro extends AppCompatActivity implements SensorEventListen
             }
             ultimaAtualizacao = tempoAtual;
             if (isColor){
-                respostab.setBackgroundColor(Color.rgb(218, 121,121));
+                respostab.setBackgroundColor(Color.parseColor("#6A5ACD"));
             }else{
-                respostab.setBackgroundColor(Color.rgb(234,78,78));
+                respostab.setBackgroundColor(Color.parseColor("#87CEFA"));
             }
             isColor = !isColor;
         }

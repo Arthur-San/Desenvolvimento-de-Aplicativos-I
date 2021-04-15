@@ -46,7 +46,9 @@ public class SensorLuminosidade extends AppCompatActivity {
                 visual.setText(String.valueOf(event.values[0]));
                 int grayShade = (int) event.values[0];
 
-                if(grayShade > 255) grayShade = 255;
+                if(grayShade <= 0){
+                    abrirActivity4();
+                };
 
                 visual.setTextColor(Color.rgb( 255 - grayShade, 255 - grayShade, 255 - grayShade ) );
                 visual.setBackgroundColor(Color.rgb(grayShade,grayShade,grayShade));
@@ -60,6 +62,12 @@ public class SensorLuminosidade extends AppCompatActivity {
         };
 
         sm.registerListener(listener,luz,SensorManager.SENSOR_DELAY_FASTEST);
+
+    }
+
+    private void abrirActivity4(){
+        Intent janelaAbrirActivity4 = new Intent(this, Activity4.class);
+        startActivity(janelaAbrirActivity4);
 
     }
 

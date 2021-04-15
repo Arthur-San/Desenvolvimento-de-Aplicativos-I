@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6DCDC"
+    android:background="#090909"
     tools:context=".Acelerometro">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:backgroundTint="#F6B5B5"
+        android:backgroundTint="#6AF865"
         android:text="Sensor de Acelerometro"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -26,10 +26,29 @@
         android:id="@+id/respostab"
         android:layout_width="0dp"
         android:layout_height="100dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="#373636"
+        android:gravity="center"
         android:text="Cor de Mudança"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnVoltarAcele"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#448A48"
+        android:text="Voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respostab" />
 </androidx.constraintlayout.widget.ConstraintLayout>
