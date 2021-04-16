@@ -6,7 +6,13 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b751e563-ef64-4afc-8509-405df2a8c32d" name="Default Changelist" comment="" />
+    <list default="true" id="b751e563-ef64-4afc-8509-405df2a8c32d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Exercicios/EdnaldoPereira/app/src/main/java/com/example/ednaldopereira/MainActivity2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Exercicios/EdnaldoPereira/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula26/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula26/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercicios/EdnaldoPereira/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Exercicios/EdnaldoPereira/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercicios/EdnaldoPereira/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Exercicios/EdnaldoPereira/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +37,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Aula26" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -109,9 +115,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1618534924858">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1800" y="161" key="FileChooserDialogImpl" timestamp="1618536937170">
+      <screen x="1366" y="0" width="1280" height="984" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/1366.0.1280.984/0.0.1366.728@0.0.1366.728" timestamp="1618534924858" />
+    <state x="1800" y="161" key="FileChooserDialogImpl/1366.0.1280.984/0.0.1366.728@1366.0.1280.984" timestamp="1618536937170" />
   </component>
 </project>
